@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex002 - JavaScript</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+           
+            font-family: sans-serif;
+           
+            background-image: url(pexels-pixabay-37534.jpg);
+            background-position: center bottom;
+        }
+        header{
+            margin-top: 30px;
+            text-align: center;
+        }
+        header > h1{
+             font-size: 2.5em;
+            background-color: rgba(128, 128, 128, 0.192);
+            text-shadow: 2px 2px 1px  rgba(255, 255, 255, 0.233);
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px 1px rgba(255, 255, 255, 0.144);
+            padding: 6px;
+            margin: 0px 0px 50px 0px;
+        }
+        h1{
+            text-align: center;
+            font-size: 2.5em;
+            background-color: rgba(128, 128, 128, 0.192);
+            text-shadow: 2px 2px 1px  rgba(8, 8, 8, 0.274);
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px 1px rgba(255, 255, 255, 0.144);
+            padding: 6px;
+            margin: 0px 0px 50px 0px;
+        }
+        main{
+            color: rgb(70, 69, 69);
+            background-color:rgba(255, 255, 255, 0.671) ;
+            margin: auto;
+            max-width: 1000px;
+            min-width: 350px;
+                 
+        }
+        main > h1{
+            font-size: 1.8em;
+            margin: 10px 0px 50px 0px
+        }
+        main > h2{
+           margin: 10px 0px 20px 0px;
+            font-weight: bolder;
+        }
+        main > p{
+            text-align: justify;
+            font-size: 1.2em;
+            font-weight: bolder;
+            margin: 30px 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tratamento de dados</h1>
+    </header>
+    <main>
+        <h1>&downarrow; Scripts utilizados &downarrow;</h1>
+        <h2>&downarrow; Window.promp &downarrow;</h2>
+            <p>Três 'window.prompt', perguntando respectivamente: nome, idade e seu estado civil. Assim armazenando as váriaveis.
+            </p>
+        <h2>&downarrow; Window.alert &downarrow;</h2>
+            <p>Servindo para mostras as informações inseridas pelo usuário.
+            </p>
+        <h2>&downarrow; Conversão de valores &downarrow;</h2>
+            <p>Utilizando 'Number' e 'String', o primeiro servindo para conversão de uma váriavel para um valor númerico, e o segundo para o valor de uma váriavel se tornar caracteres.
+            <br> Exemplo: var n1 = Number(window.prompt('Digite um número')).
+            </p>
+        <h2>&downarrow; Formatação de Strings&downarrow; </h2>
+            <p>Através da crase (``) junto de ${nomedavariável}, formatando de forma mais prática o código, e outras funções da formatação.
+            <p> 
+                Exemplo: window.alert(`A soma de ${n1} + ${n2} é igual a ${soma}`)
+            </p>
+            <p>
+                Exemplo: var s = 'JavaScript'
+            </p>
+            <p>
+                s.length = tamanho da string (total de caracteres)
+            </p>
+            <p>
+                s.toUpperCase() (transformar todas as letras em MAIÚSCULAS)
+            </p>
+            <p>
+                s.toLowerCase() (transfomar todas as letras em minúsculas)
+            </p>
+    </main>
+    <script>
+        windows.alert('Informações necessárias para acessar o site!')
+        
+        var nome = window.prompt('Qual o seu nome?')// Vai perguntar o nome do usuário
+        
+        var idade = window.prompt('Qual sua idade? (apenas números)')// Vai perguntar a idade do usuário
+        
+       var estado = window.prompt('Solteiro, casado, viuvo ou divorciado?')
+        
+       window.alert(`Prazer em te conhecer ${nome}, e parabéns pelos seus ${idade} anos. Seu estado civil é ${estado}? Certo. Muito obrigado pelas informações! Podemos prosseguir`)//'+' é concatenação
+        windows.alert('Soma entre dois números')
+       
+        // var n1 = Number(window.prompt('Digite um número'))
+        //var n2 = Number(window.prompt('Digite um segundo número'))
+        //var soma = n1 + n2
+        //window.alert(`A soma de ${n1} + ${n2} é igual a ${soma}`)
+    </script>
+</body>
+</html>
