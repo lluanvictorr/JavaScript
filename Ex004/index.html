@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex004 - JavaScript</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            font-family: sans-serif;
+            background-color: rgba(95, 158, 160, 0.452);
+        }
+        header{
+            background-color: cadetblue;
+            text-align: center;
+            border-radius: 7px;
+            box-shadow: 2px 2px 2px 1px  rgba(0, 0, 0, 0.205);
+            margin: 10px;
+        }
+        header > h1{
+            font-size: 3em;
+            color: white;
+            padding: 10px 0px;
+            text-shadow: 3px 3px 3px  rgba(0, 0, 0, 0.253);
+        }
+        header > p{
+            font-size: 2.5em;
+            font-weight: bolder;
+            color: white;
+            padding:10px 0px;
+            margin: 0px;
+            text-shadow: 3px 3px 3px  rgba(0, 0, 0, 0.253);
+        }
+        main{
+            font-size: 2em;
+            max-width: 1000px;
+            min-width: 300px;
+            margin: auto;
+        }
+         h2{
+            color: white;
+            background-color: cadetblue;
+            border-radius: 7px;
+            box-shadow: 3px 3px 3px 0px  rgba(0, 0, 0, 0.205);
+            text-shadow: 3px 3px 3px  rgba(0, 0, 0, 0.253);
+            text-align: center; 
+            margin: 10px 0px;
+        }
+         div{
+            background-color: rgba(95, 158, 160, 0.171);
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.158);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+        }
+        div > h2{
+            padding: 0px 20px;
+        }
+        div > p{
+            font-size: 1.5em;
+            text-align: center;
+        }
+        
+        div > ul{
+            list-style-position: inside;
+            font-size: 1em;
+            
+         }
+   </style>
+
+</head>
+<body>
+    <header>
+        <h1>Operadores Aritméticos</h1>
+        <p>JavaScript</p>
+    </header>
+    <main>
+        <div>
+           <h2>Sinais dos Operadores:</h2> 
+            <ul>
+                <li>+  ----- Adição (5+2 = 7)</li>
+                <li>-  ----- Subtração (5-2 = 3)</li>
+                <li>*  ----- Multiplicação (5*2 = 10)</li>
+                <li>/  ----- Divisão(real) (5/2 = 2.5)</li>
+                <li>%  ----- Resto da divisão(inteiro) (5%2 = 1)</li>
+                <li>** ----- Potenciação (5**2 = 25)</li>
+            </ul>
+        </div>   
+        <div>
+            <h2>Ordem de Precedência</h2>
+            <br><p>() </p>
+            <br><p>&downarrow;</p>
+            <br><p>**</p>
+            <br><p>&downarrow;</p>
+            <br><p> * &rightarrow; / &rightarrow; %</p>
+            <br><p>&downarrow;</p>
+            <br><p>+ &rightarrow; - </p>
+        </div>
+        
+    </main>
+</body>
+</html>
