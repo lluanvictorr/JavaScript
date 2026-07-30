@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Class</title>
+    <style>
+         body{
+            background-color: rgb(72, 49, 223);
+            font-family:'Franklin Gothic Medium', sans-serif
+        }
+        
+        h1{font-size: 3em;}
+       p{
+        font-weight: 600;
+        font-size: 1.5em;
+       }
+       div{
+        font-size: 1.3em;
+       }
+    </style>
+</head>
+<body>
+   <h1>Hora de usar o DOM</h1> 
+   <p>Parabéns, você tem 200 de QI</p>
+   <p>OBS: Não acredite em tudo que você vê na internet</p>
+   <br>
+   <div id="msg">Se você é curioso(a) clica <strong>aqui!</strong></div>
+   <p>Relaxa isso aqui é só um teste em JS </p>
+    <script>
+        var body = document.body
+        var p1= document.getElementsByTagName('p')[0]
+        document.write(p1.innerText + '....Ou  será que é 20?.....Tá é brincadeira ok?')
+        body.style.background = 'gray'
+        p1.style.color = 'white'
+        var div = document.getElementById('msg')
+        div.style.color = 'white'
+    </script>
+</body>
+</html>
