@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAÍS & NACIONALIDADE</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        input#txtpais{
+            width: 220px;    
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Qual é a sua origem?</h1>
+    <p id="resposta"></p>
+</body>
+    <input id="txtpais" type="text" placeholder="Digite o nome de seu país de origem">
+    <input type="button" value = "Verificar"
+    onclick = "verificarPais()">
+    <script>
+        function verificarPais()
+        {
+            var pais = document.getElementById("txtpais").value;
+            if(pais == "Brasil"){
+                alert("Você é brasileiro(a)!")
+                document.getElementById("resposta").innerHTML = "Nacionalidade verificada com sucesso! Você é guerreiro(a)!"
+            }
+            else{
+                alert("Você é estrangeiro(a)!")
+                document.getElementById("resposta").innerHTML = "Nacionalidade verificada com sucesso! Você é estrangeiro(a)!"
+            }
+            
+        }
+    </script>
+</html>
