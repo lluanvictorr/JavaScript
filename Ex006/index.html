@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTOS D.O.M</title>
+    <style>
+        div#interativo{
+            font-family: 'Franklin Gothic Medium',      sans-serif;
+            font-size: 1.5em;
+            background-color: rgb(36, 6, 226); 
+            color: white;
+            width: 600px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="interativo" >
+        Aqui era pra ter um botão
+    </div>
+    <script>
+         var interativo = document.getElementById("interativo");
+        interativo.addEventListener("click", clicar);
+        interativo.addEventListener("mouseenter", entrar);
+        interativo.addEventListener("mouseout", sair);
+         function clicar(){
+            interativo.innerText = 'Não adianta insistir, não tem botão aqui!';
+        }
+        function entrar(){
+            var interativo = document.getElementById("interativo");
+            interativo.innerText = 'O que está fazendo?'
+        }
+        function sair(){
+            var interativo = document.getElementById("interativo");
+            interativo.innerText = 'Viu! Eu te avisei! ';
+   }
+        
+    </script>
+</body>
+</html>

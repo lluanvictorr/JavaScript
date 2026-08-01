@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bora fazer conta</title>
+    <style>
+        body{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 1.5em;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+        input {
+            padding: 5px;
+            margin:px;
+            border-radius: 8px;
+            border: 5px solid #ccc;
+            text-align: center;
+        }
+        h2#resultado{
+            color: #000000;
+            font-size: 1em;
+            margin-top: 50px;
+        }
+        p{
+            font-size: 1.2em;
+            padding: 10px;
+            margin: 10px;
+            margin-right: 50px;
+            font-weight: bold;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1> Somando números</h1>
+    <input type="number" name="txtn1" id="txtn1">
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()">
+    <p>Resultado</p>
+    <p>&downarrow;&downarrow;&downarrow;&downarrow;&downarrow;&downarrow;&downarrow;&downarrow;&downarrow;&downarrow;&downarrow;&downarrow;&downarrow;&downarrow;&downarrow;&downarrow;&downarrow;&downarrow;</p>
+    <h2 id="resultado"></h2>
+    <script>
+        function somar(){
+            var tn1 = document.getElementById("txtn1")
+            var tn2 =  document.getElementById("txtn2")
+            var resultado = document.getElementById("resultado")
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var soma = n1 + n2
+            resultado.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${soma}`
+        }
+    </script>
+</body>
+</html>
