@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>VDI</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+   <header>
+    <h1>AGE VERIFY</h1>
+   </header> 
+   <section>
+    <div>
+        <input type="text" name="txtnome" id="txtnome" placeholder="Seu nome">
+        <br><br>
+        <input type="number" name="txtano" id="txtano" placeholder="Seu ano de nascimento">
+        <br><br>
+        <input type="radio" name="radsexo" id="masculino">
+        <label for = "masculino">Masculino</label>
+        <input type="radio" name="radsexo" id="feminino">
+        <label for="feminino">Feminino</label>
+        <p>
+            <input type="button" value="Verificar"
+            onclick = "verificar()">
+        </p>
+    </div>
+    <div id="resultado">
+        Preencha os dados acima para ver o resultado! 
+    </div>
+</section>
+   <footer>
+    <p>&copy;lluanvictorr. Todos os direitos reservados.</p>
+   </footer>
+<script src="script.js"></script>
+</body>
+</html>

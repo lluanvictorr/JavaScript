@@ -1,0 +1,29 @@
+body{
+
+background-color: #33527a;
+font-family: sans-serif;
+font-size: 1.5em;
+}
+header{
+background-color: #153661;
+color: white;
+text-align: center;
+}
+section{
+background-color: #f2f2f2;
+border-radius: 10px;
+padding: 12px;
+width: 500px;
+margin: auto;
+box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.486);
+}
+footer{
+color: #24152b;
+font-size: 0.8em;
+font-style: italic;
+text-align: center;
+}
+img{
+    width: 500px;
+    border-radius: 100%;
+}
