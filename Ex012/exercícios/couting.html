@@ -11,14 +11,16 @@
     <h1>CONTAGEM DE ? EM ?</h1>
    </header> 
    <section>
-    <div>
-        <input type="number" id="inicio" name="inicio" placeholder="Número do inicio">
+    <div id="dados">
+        <input type="number" id="txti" name="inicio" placeholder="Número do inicio">
         <br>
-        <input type="number" id="pulo" name="pulo" placeholder="Quantidade de saltos">
+        <input type="number" id="txtp" name="pulo" placeholder="Quantidade de saltos">
         <br>
-        <input type="number" name="fim" id="fim" placeholder="Número final">
-    </div>
-    <div>
+        <input type="number" name="fim" id="txtf" placeholder="Número final">
+        <br><br>
+        <input type="button" value="Fazer a contagem" onclick="contagem()">
+    </div >
+    <div id="resultado">
 
     </div>
 </section>
