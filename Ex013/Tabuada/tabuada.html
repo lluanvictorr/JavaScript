@@ -8,11 +8,16 @@
 </head>
 <body>
    <header>
-    <h1>INTERACTIVE TIME</h1>
+    <h1>MULTIPLICATION TABLE</h1>
    </header> 
    <section>
-    <div></div>
-    <div></div>
+    <div>
+        <p>Qual tabuada você quer saber? <input type="number" name="num" id="txtn" placeholder="Digite um número"></p>
+        <input type="button" value="GERAR TABUADA" onclick="tabuada()">
+    </div>
+    <div id="resultado">
+        <select name="tabuada" id="tab" size="10"></select>
+    </div>
 </section>
    <footer>
     <p>&copy;lluanvictorr. Todos os direitos reservados.</p>
